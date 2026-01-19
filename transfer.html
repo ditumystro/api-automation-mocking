@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head><meta charset="utf-8" /><title>Transfer</title></head>
+  <body>
+    <button id="send">Send</button>
+    <div id="result"></div>
+
+    <script>
+      const result = document.getElementById("result");
+      document.getElementById("send").addEventListener("click", async () => {
+        try {
+          const res = await fetch("/api/transfer", { method: "POST" });
+          const data = await res.json();
+          result.textContent = res.ok
+            ? "SUCCESS " + data.status + " " + data.transactionId
+            : "FAIL " + data.error;
+        } catch (e) {
+          result.textContent = "FAIL network";
+        }
+      });
+    </script>
+  </body>
+</html>
