@@ -70,16 +70,25 @@ playwright-report/result.png
 
 ```text
 npm install
+---
+
 
 
 2️⃣ Run Playwright tests
 
 ```text
 npx playwright test
+---
+
+
 
 3️⃣ Open the HTML report
 
 ```test
 npx playwright show-report
+---
+
+
+
 
 ![Playwright Test Report](playwright-report/result.png)
