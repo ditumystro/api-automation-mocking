@@ -37,16 +37,17 @@ api-automation-mocking/
 ├── package.json
 ├── README.md
 └── test-results/                  # Playwright reports (auto-generated)
+```
+
 
 ---
 
 
-
-# 📌Test Scenario Explained
+## 📌Test Scenario Explained
 
 The project tests a money transfer feature with two scenarios.
 
-✅ Success Scenario
+### ✅ Success Scenario
 
 User clicks Send
 
@@ -56,7 +57,7 @@ UI displays:
 
 SUCCESS success 12345
 
-❌ Failure Scenario
+### ❌ Failure Scenario
 
 User clicks Send
 API is mocked to return 400 Bad Request
@@ -67,31 +68,35 @@ FAIL Insufficient funds
 
 playwright-report/result.png
 
-# ▶️How to Run the Tests
+## ▶️How to Run the Tests
 
-1️⃣Install dependencies
+### 1️⃣Install dependencies
 
 ```text
 npm install
----
+```
 
 
-
-2️⃣ Run Playwright tests
+### 2️⃣ Run Playwright tests
 
 ```text
 npx playwright test
----
+```
 
 
-
-3️⃣ Open the HTML report
+### 3️⃣ Open the HTML report
 
 ```test
 npx playwright show-report
+```
+
 ---
 
+## 📊 Test Results Example
 
 
+```text
+playwright-report/result.png
+```
 
 ![Playwright Test Report](playwright-report/result.png)
