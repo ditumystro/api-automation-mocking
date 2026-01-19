@@ -45,3 +45,5 @@ api-automation-mocking/
 SUCCESS success 12345
 
 FAIL Insufficient funds
+
+![Playwright Test Report](playwright-report/result.png)
