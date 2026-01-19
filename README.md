@@ -38,6 +38,9 @@ api-automation-mocking/
 ├── README.md
 └── test-results/                  # Playwright reports (auto-generated)
 
+---
+
+
 
 # 📌Test Scenario Explained
 
