@@ -82,5 +82,4 @@ npx playwright test
 ```test
 npx playwright show-report
 
-
-playwright-report/result.png
+![Playwright Test Report](playwright-report/result.png)
