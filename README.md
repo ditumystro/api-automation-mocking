@@ -1,11 +1,8 @@
 # 🧪 API Automation & Mocking with Playwright
 
-This repository demonstrates **API automation testing using Playwright**, with a strong focus on **network request mocking**, **frontend–backend isolation**, and **deterministic test execution without a real backend server**.
+This repository demonstrates **API automation testing using Playwright**, with a strong focus on **network request mocking**, **frontend–backend isolation**.
 
-It is designed to serve as:
-- a **QA Automation technical exercise**
-- a **Playwright API mocking example**
-- an **interview-ready portfolio project**
+
 
 ---
 
@@ -42,8 +39,48 @@ api-automation-mocking/
 └── test-results/                  # Playwright reports (auto-generated)
 
 
+# 📌Test Scenario Explained
+
+The project tests a money transfer feature with two scenarios.
+
+✅ Success Scenario
+
+User clicks Send
+
+Frontend sends POST /api/transfer
+API is mocked to return 200 OK
+UI displays:
+
 SUCCESS success 12345
+
+❌ Failure Scenario
+
+User clicks Send
+API is mocked to return 400 Bad Request
+UI displays:
+
 
 FAIL Insufficient funds
 
-![Playwright Test Report](playwright-report/result.png)
+playwright-report/result.png
+
+# ▶️How to Run the Tests
+
+1️⃣Install dependencies
+
+```text
+npm install
+
+
+2️⃣ Run Playwright tests
+
+```text
+npx playwright test
+
+3️⃣ Open the HTML report
+
+```test
+npx playwright show-report
+
+
+playwright-report/result.png
